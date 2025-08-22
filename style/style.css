@@ -4,14 +4,27 @@
     --fondo-2: #B2BFB4;
     --fondo-3: #A4B3A4;
     --color-letra: #2a322c;
-    --borde: #333 1px solid
+    --borde: #333 1px solid;
+    --letra-titulos: oswald;
+    --letra-texto: quicksand;
+
+
+}
+/*Fuentes*/
+@font-face {
+    font-family: "oswald";
+    src: url(/fuentes/Oswald/Oswald-Regular.ttf);
+}
+@font-face {
+    font-family: "quicksand";
+    src: url(/fuentes/Quicksand/Quicksand-Regular.ttf);
 }
 /*Reseteo de paddings y de margenes*/
 *{
     padding: 0;
     margin: 0;
 }
-
+/*Fondo*/
 body {
     background-color: var(--fondo-1);
 }
@@ -24,6 +37,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 nav img {
     padding: 0.5rem;
@@ -35,6 +49,7 @@ nav img {
 }
 .item_menu a {
     color: var(--color-letra);
+    font-family: var(--letra-titulos);
     padding: 1rem;
     text-decoration: none;
     font-size: 20px;
@@ -57,4 +72,87 @@ section{
     background-color: var(--fondo-2);
     margin: 4rem;
     border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    
+    display: grid;
+    grid-template-columns: 55% 45%;
+    gap: 10px;
+    align-items: center;
+    padding: 2px;
+}
+
+/*Seccion Inicio*/
+.inicio .texto {
+    grid-column: 1 / 2;
+    margin-left: 2.5rem;
+}
+
+.inicio .texto h1{
+    font-size: 6rem;
+    font-family: var(--letra-titulos);
+    margin-bottom: 2rem;
+}
+.inicio .texto p{
+    font-size: 1.5rem;
+    font-family: var(--letra-texto);
+}
+.inicio .img_inicio {
+    grid-column: 2 / 3;
+}
+.inicio .img_inicio img {
+    width: 90%;
+    height: auto;
+    margin: 1rem;
+    align-items: center;
+}
+
+/*Primer proyecto*/
+.proyecto1 .texto {
+    grid-column: 1 / 2;
+    margin: 2.5rem;
+}
+
+.proyecto1 .texto h1{
+    font-size: 6rem;
+    font-family: var(--letra-titulos);
+    margin-bottom: 2rem;
+}
+.proyecto1 .texto p{
+    font-size: 1.5rem;
+    font-family: var(--letra-texto);
+}
+.proyecto1 .img {
+    grid-column: 2 / 3;
+}
+.proyecto1 .img img {
+    width: 90%;
+    height: auto;    
+    margin: 1rem;
+    align-items: center;
+}
+
+
+/*Apartado de gustos*/
+.gustos .texto {
+    grid-column: 1 / 2;
+    margin: 2.5rem;
+}
+
+.gustos .texto h1{
+    font-size: 6rem;
+    font-family: var(--letra-titulos);
+    margin-bottom: 2rem;
+}
+.gustos .texto p{
+    font-size: 1.5rem;
+    font-family: var(--letra-texto);
+}
+.gustos .img {
+    grid-column: 2 / 3;
+}
+.gustos .img img {
+    width: 90%;
+    height: auto;    
+    margin: 1rem;
+    align-items: center;
 }
