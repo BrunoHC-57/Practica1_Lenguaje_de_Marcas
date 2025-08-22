@@ -38,6 +38,9 @@ body {
     flex-direction: row;
     justify-content: flex-start;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    position: fixed;
+    top: 0;
 }
 nav img {
     padding: 0.5rem;
@@ -82,6 +85,9 @@ section{
 }
 
 /*Seccion Inicio*/
+.inicio {
+    margin-top: 6rem;
+}
 .inicio .texto {
     grid-column: 1 / 2;
     margin-left: 2.5rem;
@@ -93,6 +99,7 @@ section{
     margin-bottom: 2rem;
 }
 .inicio .texto p{
+    margin: 0.5rem;
     font-size: 1.5rem;
     font-family: var(--letra-texto);
 }
@@ -107,9 +114,8 @@ section{
 }
 
 /*Primer proyecto*/
-.proyecto1 .texto {
+.proyecto1 .img {
     grid-column: 1 / 2;
-    margin: 2.5rem;
 }
 
 .proyecto1 .texto h1{
@@ -118,11 +124,13 @@ section{
     margin-bottom: 2rem;
 }
 .proyecto1 .texto p{
+    margin: 0.5rem;
     font-size: 1.5rem;
     font-family: var(--letra-texto);
 }
-.proyecto1 .img {
+.proyecto1 .texto {
     grid-column: 2 / 3;
+    margin: 2.5rem;
 }
 .proyecto1 .img img {
     width: 90%;
@@ -133,9 +141,8 @@ section{
 
 
 /*Apartado de gustos*/
-.gustos .texto {
+.gustos .img {
     grid-column: 1 / 2;
-    margin: 2.5rem;
 }
 
 .gustos .texto h1{
@@ -144,11 +151,13 @@ section{
     margin-bottom: 2rem;
 }
 .gustos .texto p{
+    margin: 0.5rem;
     font-size: 1.5rem;
     font-family: var(--letra-texto);
 }
-.gustos .img {
+.gustos .texto {
     grid-column: 2 / 3;
+    margin: 2.5rem;
 }
 .gustos .img img {
     width: 90%;
