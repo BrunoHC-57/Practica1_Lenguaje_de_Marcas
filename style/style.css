@@ -15,11 +15,34 @@ body {
     background-color: var(--fondo-1);
 }
 .nav_principal {
+    height: 4rem;
     background-color: var(--fondo-3);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+nav img {
+    padding: 0.5rem;
+}
+.item_menu {
+    display: flex;
     align-items: center;
+    padding: 1rem;
+}
+.item_menu a {
+    color: #2a322c;
+    padding: 1rem;
+    text-decoration: none;
+    font-size: 20px;
+    transition: 0.5s;
+}
+
+.item_menu a:hover{
+    color: black;
+    font-size: 22px;
 }
 
 .logo {
-    height: 4rem;
-    width: 4rem;
+    height: 3rem;
+    width: 3rem;
 }
