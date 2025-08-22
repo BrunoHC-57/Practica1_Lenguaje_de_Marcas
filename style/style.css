@@ -3,6 +3,7 @@
     --fondo-1: #C0D3C2;
     --fondo-2: #B2BFB4;
     --fondo-3: #A4B3A4;
+    --color-letra: #2a322c;
     --borde: #333 1px solid
 }
 /*Reseteo de paddings y de margenes*/
@@ -14,6 +15,9 @@
 body {
     background-color: var(--fondo-1);
 }
+
+/*configuracion del menu*/
+
 .nav_principal {
     height: 4rem;
     background-color: var(--fondo-3);
@@ -30,11 +34,11 @@ nav img {
     padding: 1rem;
 }
 .item_menu a {
-    color: #2a322c;
+    color: var(--color-letra);
     padding: 1rem;
     text-decoration: none;
     font-size: 20px;
-    transition: 0.5s;
+    transition: 0.3s;
 }
 
 .item_menu a:hover{
@@ -45,4 +49,12 @@ nav img {
 .logo {
     height: 3rem;
     width: 3rem;
+}
+
+/*Configuracion de secciones*/
+
+section{
+    background-color: var(--fondo-2);
+    margin: 4rem;
+    border-radius: 10px;
 }
