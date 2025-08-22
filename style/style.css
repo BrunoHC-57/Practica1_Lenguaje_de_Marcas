@@ -138,7 +138,41 @@ section{
     margin: 1rem;
     align-items: center;
 }
+/*prupo de apartados*/
 
+.grupo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 4rem;
+    margin: 4rem;
+}
+/*proyecto2*/
+.proyecto2 {
+    width: 45%;
+    margin: 0rem;
+    display: grid;
+    grid-template-columns: 1fr, 1fr, 1fr;
+}
+.proyecto2 h1{
+    font-size: 6rem;
+    font-family: var(--letra-titulos);
+    margin-bottom: 2rem;
+}
+.proyecto2 p{
+    margin: 0.5rem;
+    font-size: 1.5rem;
+    font-family: var(--letra-texto);
+}
+.proyecto2 img {
+    width: 90%;
+    height: auto;    
+    margin: 1rem;
+    align-items: center;
+}
+/*proyecto3*/
+/*Curriculum*/
+/*Contactame*/
 
 /*Apartado de gustos*/
 .gustos .img {
