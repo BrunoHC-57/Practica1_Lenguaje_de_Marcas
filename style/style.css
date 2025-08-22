@@ -1,0 +1,25 @@
+/*seteo de variables base*/
+:root{
+    --fondo-1: #C0D3C2;
+    --fondo-2: #B2BFB4;
+    --fondo-3: #A4B3A4;
+    --borde: #333 1px solid
+}
+/*Reseteo de paddings y de margenes*/
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: var(--fondo-1);
+}
+.nav_principal {
+    background-color: var(--fondo-3);
+    align-items: center;
+}
+
+.logo {
+    height: 4rem;
+    width: 4rem;
+}
