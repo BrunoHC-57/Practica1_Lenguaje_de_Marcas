@@ -762,3 +762,13 @@ footer .c:hover {
         display: block;
     }
 }
+
+@media screen and (max-width:1200px) {
+    .curriculum img {
+        width: 150px;
+    }
+
+    .contactame img {
+        height: 100px;
+    }
+}
