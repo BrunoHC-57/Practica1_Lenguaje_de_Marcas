@@ -594,11 +594,23 @@ footer .c:hover {
 @media screen and (max-width:576px) {
 
     /* configuracion del menu */
+    .nav_principal{
+        height: 2.2rem;
+    }
     .item_menu a {
-        font-size: 0.9rem;
+        font-size: 1rem;
+        padding: 0.5rem;
+    }
+
+    .logo {
+        height: 1.5rem;
+        width: 1.5rem;
     }
 
     /* Seccion de inicio */
+    .inicio {
+    margin-top: 3rem;
+    }
     .inicio .texto h1 {
         font-size: 3rem;
         text-align: center;
@@ -622,6 +634,19 @@ footer .c:hover {
 
     .inicio .img_inicio img {
         width: 75%;
+    }
+
+    /* Configuracion de secciones */
+
+    section {
+        margin: 1rem;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+        align-items: center;
+        padding: 2px;
     }
 
     /* Primer proyecto */
@@ -661,6 +686,7 @@ footer .c:hover {
     .grupo {
         display: grid;
         grid-column: 1fr;
+        margin: 1rem;
     }
 
     /* proyecto2 */
