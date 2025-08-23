@@ -235,16 +235,17 @@ section{
     margin: 2rem;
     grid-column: 1 / 3;
 }
-.contactame p{
+.contactame .nombre-correo {
+    grid-column: 1 / 2;
+    display: flex;
+    flex-direction: column;
     margin: 1rem;
     font-size: 1.5rem;
     font-family: var(--letra-texto);
 }
-.contactame .nombre-correo {
-    grid-column: 1 / 2;
-}
 .contactame img {
-    height: 50px;
+    height: 125px;
+    align-items: center;
     width: auto;
     grid-column: 2 / 3;
 }
@@ -253,7 +254,30 @@ section{
     height: auto;    
     margin: 1rem;
     align-items: center;
-    grid-column: 1 / 3;
+    grid-column: 1 / 3;margin: 1rem;
+    font-size: 1.5rem;
+    font-family: var(--letra-texto);
+}
+textarea {
+    font-family: var(--letra-texto);
+    font-size: 18px;
+}
+input{
+    font-family: var(--letra-texto);
+    font-size: 18px;
+}
+.boton-enviar{
+    background-color: var(--fondo-3);
+    font-family: var(--letra-titulos);
+    font-size: 20px;
+    padding: 0.2rem;
+    margin-top: 0.3rem; 
+    transition: 0.3s;
+    color: var(--color-letra);
+}
+.boton-enviar:hover{
+    color: black;
+    font-size: 20.5px;
 }
 
 /*Apartado de gustos*/
